@@ -3,6 +3,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Products from "./components/Products/Products";
 
 const App = () => {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -24,6 +25,7 @@ const App = () => {
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup} />
+      <Products/>
     </div>
   );
 };
