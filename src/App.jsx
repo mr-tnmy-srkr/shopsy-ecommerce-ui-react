@@ -8,6 +8,8 @@ import Products from "./components/Products/Products";
 import Subscribe from "./components/Subscribe/Subscribe";
 import TopProducts from "./components/TopProducts/TopProducts";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer/Footer";
+import Popup from "./components/Popup/Popup";
 
 const App = () => {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -35,6 +37,8 @@ const App = () => {
       <Subscribe />
       <Products />
       <Testimonials/>
+      <Footer/>
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   );
 };
